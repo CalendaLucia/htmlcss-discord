@@ -7,7 +7,7 @@
 /* BODY STYLE */
 
 body p {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 25px;
 }
 
@@ -71,7 +71,7 @@ nav, #menu {
 
  /* BUTTON HEADER STYLE */
 
-.arrow::before {
+ .arrow::before {
     content: "\2193";
     font-size: 10px;
 }
@@ -81,7 +81,7 @@ nav, #menu {
     border-radius: 50px;
     background-color: white;
     font-size: 9px;
-    margin-top: 10px;
+    margin-top: 25px;
     border: 1px solid black;
 }
 
@@ -95,9 +95,8 @@ nav, #menu {
 
 .section,.aside-content {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    max-width:80%;
     min-height:500px;
     margin: 0 auto;
    
@@ -118,7 +117,7 @@ section .lightgray {
 
 
 .description-item {
-    width: 25%;
+    width: 20%;
     min-height: 400px;
     text-align: start;
     padding: 15px;
@@ -129,64 +128,159 @@ h2 {
     font-size: 35px;
     margin-bottom: 30px;
     margin-top: 40px;
+    text-align: start;
 }
-
 
 #big-section {
     width: 100%;
     min-height: 320px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+   
 }
 
-.box-green {
-    width: 80%;
-    height:300px ;
-    background-color: #228b22;
-    border: 1px dashed black;
+.item2 {
+    background-image: url(../img2/item2.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.item3 {
+    background-image: url(../img2/item3.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.item4 {
+    width: 30%;
+    min-height:250px ;
+    background-image:url(../img2/item4-big.svg) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.description-big-section {
+    width: 50%;
+    text-align: center;
+  
+}
+
+.footer-big-section {
+    width: 20%;
+    height: 200px;
+    text-align: center;
+    background-image: url(../img2/stars.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 15px;
+
+}
+
+.footer-big-section button {
+    padding: 6px 15px;
+    border-radius: 50px;
+    border:1px solid black;
+    background-color: #8ea1e1;
+    color: whitesmoke;
+    margin-top: 20px;
+    font-size: 10px;
+  
+}
+
+.footer-big-section button::before {
+    content: "\2193";
+    font-size: 10px;
+    margin-right: 10px;
     
+}
+
+.aside-content{
+    min-height: 450px;
+    border-bottom: 3px solid white;
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+
 }
 
 .aside-box {
-    width: 15%;
+    width: 30%;
     height: 180px;
-    background-color: #f08080;
-    border: 1px dashed black;
-    
+    line-height: 40px;
+    margin-left: 100px;
 }
 
-.small-box {
-    width: 10%;
-    height: 180px;
-    background-color:#20b2aa;
-    border: 1px dashed white;
+ #bandiera {
+    width: 20px;
+    background-color: black;
+}
+
+  #language {
+   display: inline-block;
+   color: white;
+  }
+
+.aside-box h3 {
+    color: #7289da; 
+}
+  
+#language::after {
+    content: "\25BC";
+    font-size: 8px;
+    padding: 5px;
+}
+
+.small-box h6 {
+    font-size: 20px;
+    color: #7289da;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.small-box{
+    width: 20%;
+    height: 200px;
+    margin-left: 28px;
+    font-size: 15px;
+    font-size: 15px;
+    line-height: 25px;
 }
 
 /* FOOTER STYLE */
 
-footer {
+footer, aside {
     background-color:  #23272a;
-    border-bottom: 2px solid white;
+    min-height: 300px;
+
   
 }
 .container-footer {
     width: 80%;
-    background-color:#7fffd4 ;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    
 }
 
 .logo-footer, .button {
-    border: 1px dashed black;
-    background-color: #ffb6c1;
-    padding: 2px;
+  padding: 20px;
 }
 
-hr {
-    margin-bottom: 10px;
-    border: 1px solid white;
+#button-footer {
+   padding: 10px 15px; 
+   border-radius: 50px;
+   border: 1px solid black;
+   background-color: #7289da ;
+   color: white;
+}
+
+#special-items {
+    color: white;
+    margin-right: 30px;
+}
+
+.fa-brands {
+    margin: 5px;
 }
