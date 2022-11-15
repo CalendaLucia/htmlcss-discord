@@ -108,7 +108,7 @@ section .lightgray {
     background-color:#d3d3d3 ;
 }
 
-.item1 {
+.box {
     width: 50%;
     min-height: 400px;
     background-size: contain;
@@ -116,7 +116,8 @@ section .lightgray {
     background-image: url(../img2/item1.svg);
 }
 
-.description-item1 {
+
+.description-item {
     width: 25%;
     min-height: 400px;
     text-align: start;
